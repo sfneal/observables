@@ -1,6 +1,6 @@
 {
     "name": "sfneal/observables",
-    "description": "Boilerplate for PHP package repo's",
+    "description": "Event, Listener & Observer abstraction layers for event driven Laravel applications",
     "keywords": [
         "sfneal",
         "observables"
@@ -23,12 +23,16 @@
     },
     "autoload": {
         "psr-4": {
-            "Sfneal\\Observables\\": "src"
+            "Sfneal\\Events\\": "src/Events",
+            "Sfneal\\Listeners\\": "src/Listeners",
+            "Sfneal\\Observers\\": "src/Observers"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Sfneal\\Observables\\Tests\\": "tests"
+            "Sfneal\\Events\\Tests\\": "tests/Events",
+            "Sfneal\\Listeners\\Tests\\": "tests/Listeners",
+            "Sfneal\\Observers\\Tests\\": "tests/Observers"
         }
     },
     "scripts": {

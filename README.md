@@ -1,11 +1,11 @@
-# Very short description of the package
+# Observables - Events, Listeners & Observers 
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/sfneal/observables.svg?style=flat-square)](https://packagist.org/packages/sfneal/observables)
 [![Build Status](https://img.shields.io/travis/sfneal/observables/master.svg?style=flat-square)](https://travis-ci.org/sfneal/observables)
 [![Quality Score](https://img.shields.io/scrutinizer/g/sfneal/observables.svg?style=flat-square)](https://scrutinizer-ci.com/g/sfneal/observables)
 [![Total Downloads](https://img.shields.io/packagist/dt/sfneal/observables.svg?style=flat-square)](https://packagist.org/packages/sfneal/observables)
 
-This is where your description should go. Try and limit it to a paragraph or two, and maybe throw in a mention of what PSRs you support to avoid any confusion with users and contributors.
+Event, Listener & Observer abstraction layers for event driven Laravel applications
 
 ## Installation
 
