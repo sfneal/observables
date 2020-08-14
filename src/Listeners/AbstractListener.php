@@ -6,11 +6,9 @@ use Sfneal\Events\AbstractEvent;
 use Sfneal\Queueables\AbstractQueueable;
 
 /**
- * Class Listener
- * @package Sfneal\Listeners
+ * Class Listener.
  * @method void handle(AbstractEvent $event)
  */
 abstract class AbstractListener extends AbstractQueueable
 {
-
 }

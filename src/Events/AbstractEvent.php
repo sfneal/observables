@@ -7,8 +7,7 @@ use Illuminate\Foundation\Events\Dispatchable;
 use Illuminate\Queue\SerializesModels;
 
 /**
- * Class AbstractEvent
- * @package Sfneal\Events
+ * Class AbstractEvent.
  */
 abstract class AbstractEvent
 {
