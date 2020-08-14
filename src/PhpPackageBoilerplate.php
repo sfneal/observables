@@ -1,8 +1,8 @@
 <?php
 
-namespace Sfneal\PhpPackageBoilerplate;
+namespace Sfneal\Observables;
 
-class PhpPackageBoilerplate
+class Observables
 {
     // Build your next great package.
 }
