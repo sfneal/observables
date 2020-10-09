@@ -32,9 +32,6 @@ jobs:
         - php: 5.3
           dist: precise
           env: COMPOSER_FLAGS="--prefer-lowest" COMPOSER_SELF_UPDATE_FLAGS="--snapshot"
-        - php: 5.3
-          dist: precise
-          env: COMPOSER_FLAGS="" COMPOSER_SELF_UPDATE_FLAGS="--snapshot"
 
     allow_failures:
         -   php: 8
