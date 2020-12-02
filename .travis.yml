@@ -36,12 +36,13 @@ jobs:
           env: COMPOSER_FLAGS="--prefer-lowest" COMPOSER_SELF_UPDATE_FLAGS="--snapshot"
 
     allow_failures:
-        -  php: 8
+        -  php: 8.0
         -  php: nightly
 
 php:
     - nightly
-    - 8
+    - hhvm
+    - 8.0
     - 7.4
     - 7.3
     - 7.2
