@@ -33,9 +33,8 @@ jobs:
           env: COMPOSER_FLAGS=""
 
     allow_failures:
-        -  php: 8.0
-        -  php: nightly
-        -  php: hhvm
+        -   php: hhvm
+        -   php: nightly
 
 php:
     - nightly
