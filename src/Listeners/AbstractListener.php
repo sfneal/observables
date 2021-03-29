@@ -5,7 +5,6 @@ namespace Sfneal\Listeners;
 use Sfneal\Events\AbstractEvent;
 use Sfneal\Queueables\AbstractQueueable;
 
-
 abstract class AbstractListener extends AbstractQueueable
 {
     /**
