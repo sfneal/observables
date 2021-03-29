@@ -5,6 +5,7 @@ namespace Sfneal\Observables\Tests\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Sfneal\Observables\Tests\Factories\PeopleFactory;
+use Sfneal\Observables\Tests\Mocks\PeopleCreatedEvent;
 
 class People extends Model
 {
@@ -26,6 +27,13 @@ class People extends Model
         'name_last',
         'email',
         'age',
+    ];
+
+    /**
+     * @var array Events to be dispatched after certain events
+     */
+    protected $dispatchesEvents = [
+        'created' => PeopleCreatedEvent::class,
     ];
 
     /**
