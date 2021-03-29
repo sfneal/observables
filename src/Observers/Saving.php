@@ -2,9 +2,11 @@
 
 namespace Sfneal\Observers;
 
+use Illuminate\Database\Eloquent\Model;
+
 /**
  * Interface Saving.
- * @method saving
+ * @method void saving(Model $model)
  */
 interface Saving
 {
