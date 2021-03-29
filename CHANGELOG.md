@@ -25,3 +25,9 @@ All notable changes to `observables` will be documented in this file
 
 ## 0.4.1 - 2020-12-11
 - cut support for php5.5 & lower
+
+
+## 0.5.0 - 2021-03-29
+- cut support for php7.2 & lower
+- bump min laravel/framework version to 8.34 to support EventFake assertion methods
+- make test suite for testing `Event`, `Listener` & `Observable` functionality
