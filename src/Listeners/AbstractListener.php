@@ -7,6 +7,8 @@ use Sfneal\Queueables\AbstractQueueable;
 
 abstract class AbstractListener extends AbstractQueueable
 {
+    // todo: add void return type hinting
+
     /**
      * Handle the event.
      *
