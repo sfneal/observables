@@ -4,8 +4,8 @@ namespace Sfneal\Observables\Tests;
 
 use Exception;
 use Illuminate\Support\Facades\Event;
-use Sfneal\Observables\Tests\Factories\PeopleFactory;
 use Sfneal\Observables\Tests\Mocks\PeopleCreatedEvent;
+use Sfneal\Observables\Tests\Mocks\PeopleCreatedListener;
 use Sfneal\Observables\Tests\Models\People;
 
 class EventTest extends TestCase
@@ -29,5 +29,11 @@ class EventTest extends TestCase
         Event::assertDispatched(PeopleCreatedEvent::class, function (PeopleCreatedEvent $event) use ($person) {
             return $event->people->getKey() == $person->getKey();
         });
+
+        // Assert that an event listener is listening to a given event
+        Event::assertListening(
+            PeopleCreatedEvent::class,
+            PeopleCreatedListener::class
+        );
     }
 }
