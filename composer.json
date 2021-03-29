@@ -33,9 +33,7 @@
     },
     "autoload-dev": {
         "psr-4": {
-            "Sfneal\\Events\\Tests\\": "tests/Events",
-            "Sfneal\\Listeners\\Tests\\": "tests/Listeners",
-            "Sfneal\\Observers\\Tests\\": "tests/Observers"
+            "Sfneal\\Observables\\Tests\\": "tests"
         }
     },
     "scripts": {
