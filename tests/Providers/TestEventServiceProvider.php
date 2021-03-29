@@ -5,6 +5,8 @@ namespace Sfneal\Observables\Tests\Providers;
 use Illuminate\Foundation\Support\Providers\EventServiceProvider as ServiceProvider;
 use Sfneal\Observables\Tests\Mocks\PeopleCreatedEvent;
 use Sfneal\Observables\Tests\Mocks\PeopleCreatedListener;
+use Sfneal\Observables\Tests\Mocks\TestEvent;
+use Sfneal\Observables\Tests\Mocks\TestListener;
 
 class TestEventServiceProvider extends ServiceProvider
 {
@@ -16,6 +18,9 @@ class TestEventServiceProvider extends ServiceProvider
     protected $listen = [
         PeopleCreatedEvent::class => [
             PeopleCreatedListener::class,
+        ],
+        TestEvent::class => [
+            TestListener::class,
         ],
     ];
 
