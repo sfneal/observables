@@ -4,7 +4,6 @@ namespace Sfneal\Observables\Tests;
 
 use Exception;
 use Illuminate\Support\Facades\Event;
-use Sfneal\Observables\Tests\Factories\PeopleFactory;
 use Sfneal\Observables\Tests\Mocks\PeopleCreatedEvent;
 use Sfneal\Observables\Tests\Models\People;
 
