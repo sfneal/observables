@@ -4,23 +4,11 @@ namespace Sfneal\Observables\Tests;
 
 use Illuminate\Support\Facades\Event;
 use Sfneal\Observables\Tests\Mocks\PeopleCreatedEvent;
-use Sfneal\Observables\Tests\Mocks\PeopleCreatedListener;
 use Sfneal\Observables\Tests\Mocks\TestEvent;
-use Sfneal\Observables\Tests\Mocks\TestListener;
 use Sfneal\Observables\Tests\Models\People;
 
 class EventTest extends TestCase
 {
-    protected function setUp(): void
-    {
-        parent::setUp();
-
-        // Enable event faking
-        Event::fake();
-
-        // Assert that no events were dispatched...
-        Event::assertNothingDispatched();
-    }
 
     /** @test */
     public function event_can_be_fired_from_model()
@@ -35,12 +23,6 @@ class EventTest extends TestCase
         Event::assertDispatched(PeopleCreatedEvent::class, function (PeopleCreatedEvent $event) use ($person) {
             return $event->people->getKey() == $person->getKey();
         });
-
-        // Assert that an event listener is listening to a given event
-        Event::assertListening(
-            PeopleCreatedEvent::class,
-            PeopleCreatedListener::class
-        );
     }
 
     /** @test */
@@ -59,11 +41,5 @@ class EventTest extends TestCase
         Event::assertDispatched(TestEvent::class, function (TestEvent $event) use ($amount) {
             return $event->amount == $amount;
         });
-
-        // Assert that an event listener is listening to a given event
-        Event::assertListening(
-            TestEvent::class,
-            TestListener::class
-        );
     }
 }
