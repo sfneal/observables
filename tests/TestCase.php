@@ -4,7 +4,6 @@ namespace Sfneal\Observables\Tests;
 
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Orchestra\Testbench\TestCase as OrchestraTestCase;
-use Sfneal\Observables\Tests\Models\People;
 use Sfneal\Observables\Tests\Providers\TestingServiceProvider;
 
 class TestCase extends OrchestraTestCase
