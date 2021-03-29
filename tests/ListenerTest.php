@@ -11,6 +11,8 @@ use Sfneal\Observables\Tests\Mocks\TestListener;
 
 class ListenerTest extends TestCase
 {
+    use EventFakerSetup;
+
     /** @test */
     public function listeners_are_attached_to_events()
     {
