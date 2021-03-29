@@ -1,14 +1,11 @@
 <?php
 
-
 namespace Sfneal\Observables\Tests\Mocks;
-
 
 use Sfneal\Listeners\AbstractListener;
 
 class TestListener extends AbstractListener
 {
-
     /**
      * Handle the event.
      *
