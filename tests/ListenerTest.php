@@ -2,7 +2,6 @@
 
 namespace Sfneal\Observables\Tests;
 
-
 use Illuminate\Support\Facades\Event;
 use Sfneal\Observables\Tests\Mocks\PeopleCreatedEvent;
 use Sfneal\Observables\Tests\Mocks\PeopleCreatedListener;
