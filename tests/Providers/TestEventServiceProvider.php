@@ -5,8 +5,10 @@ namespace Sfneal\Observables\Tests\Providers;
 use Illuminate\Foundation\Support\Providers\EventServiceProvider as ServiceProvider;
 use Sfneal\Observables\Tests\Mocks\PeopleCreatedEvent;
 use Sfneal\Observables\Tests\Mocks\PeopleCreatedListener;
+use Sfneal\Observables\Tests\Mocks\PeopleObserver;
 use Sfneal\Observables\Tests\Mocks\TestEvent;
 use Sfneal\Observables\Tests\Mocks\TestListener;
+use Sfneal\Observables\Tests\Models\People;
 
 class TestEventServiceProvider extends ServiceProvider
 {
@@ -32,5 +34,8 @@ class TestEventServiceProvider extends ServiceProvider
     public function boot()
     {
         parent::boot();
+
+        // Observers
+        People::observe(PeopleObserver::class);
     }
 }
