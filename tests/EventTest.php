@@ -9,7 +9,6 @@ use Sfneal\Observables\Tests\Models\People;
 
 class EventTest extends TestCase
 {
-
     /** @test */
     public function event_can_be_fired_from_model()
     {
