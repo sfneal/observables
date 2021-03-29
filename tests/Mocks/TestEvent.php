@@ -16,7 +16,7 @@ class TestEvent extends AbstractEvent
      *
      * @param int $amount
      */
-    public function __construct($amount)
+    public function __construct(int $amount)
     {
         $this->amount = $amount;
     }
