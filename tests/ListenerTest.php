@@ -2,13 +2,25 @@
 
 namespace Sfneal\Observables\Tests;
 
-use PHPUnit\Framework\TestCase as PHPUnitTestCase;
 
-class ListenerTest extends PHPUnitTestCase
+use Illuminate\Support\Facades\Event;
+use Sfneal\Observables\Tests\Mocks\PeopleCreatedEvent;
+use Sfneal\Observables\Tests\Mocks\PeopleCreatedListener;
+use Sfneal\Observables\Tests\Mocks\TestEvent;
+use Sfneal\Observables\Tests\Mocks\TestListener;
+
+class ListenerTest extends TestCase
 {
     /** @test */
-    public function true_is_true()
+    public function listeners_are_attached_to_events()
     {
-        $this->assertTrue(true);
+        Event::assertListening(
+            PeopleCreatedEvent::class,
+            PeopleCreatedListener::class
+        );
+        Event::assertListening(
+            TestEvent::class,
+            TestListener::class
+        );
     }
 }
