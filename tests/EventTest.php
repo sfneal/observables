@@ -11,12 +11,20 @@ use Sfneal\Observables\Tests\Models\People;
 
 class EventTest extends TestCase
 {
-    /** @test */
-    public function event_can_be_fired_from_model()
+    protected function setUp(): void
     {
+        parent::setUp();
+
         // Enable event faking
         Event::fake();
 
+        // Assert that no events were dispatched...
+        Event::assertNothingDispatched();
+    }
+
+    /** @test */
+    public function event_can_be_fired_from_model()
+    {
         // Assert that no events have been pushed
         Event::assertNotDispatched(PeopleCreatedEvent::class);
 
@@ -38,9 +46,6 @@ class EventTest extends TestCase
     /** @test */
     public function event_can_be_fired_statically()
     {
-        // Enable event faking
-        Event::fake();
-
         // Assert that no events have been pushed
         Event::assertNotDispatched(TestEvent::class);
 
