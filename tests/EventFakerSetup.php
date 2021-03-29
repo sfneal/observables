@@ -1,8 +1,6 @@
 <?php
 
-
 namespace Sfneal\Observables\Tests;
-
 
 use Illuminate\Support\Facades\Event;
 

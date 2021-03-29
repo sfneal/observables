@@ -1,8 +1,6 @@
 <?php
 
-
 namespace Sfneal\Observables\Tests\Mocks;
-
 
 use Illuminate\Support\Facades\Event;
 use Sfneal\Observables\Tests\Models\People;
