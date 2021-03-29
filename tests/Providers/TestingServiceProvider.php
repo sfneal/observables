@@ -3,8 +3,6 @@
 namespace Sfneal\Observables\Tests\Providers;
 
 use Illuminate\Support\ServiceProvider;
-use Sfneal\Observables\Tests\Mocks\PeopleCreatedEvent;
-use Sfneal\Observables\Tests\Mocks\PeopleCreatedListener;
 
 class TestingServiceProvider extends ServiceProvider
 {

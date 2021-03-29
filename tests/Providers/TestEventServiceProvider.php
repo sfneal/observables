@@ -1,8 +1,6 @@
 <?php
 
-
 namespace Sfneal\Observables\Tests\Providers;
-
 
 use Illuminate\Foundation\Support\Providers\EventServiceProvider as ServiceProvider;
 use Sfneal\Observables\Tests\Mocks\PeopleCreatedEvent;
@@ -18,7 +16,7 @@ class TestEventServiceProvider extends ServiceProvider
     protected $listen = [
         PeopleCreatedEvent::class => [
             PeopleCreatedListener::class,
-        ]
+        ],
     ];
 
     /**
