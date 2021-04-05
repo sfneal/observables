@@ -39,5 +39,5 @@ All notable changes to `observables` will be documented in this file
 - refactor classes to remove 'Abstract' prefix from `Event`, `Listener` & `Observer`
 
 
-## 1.0.1 - 2021-04-05
+## 1.1.0 - 2021-04-05
 - make `CacheInvalidator` trait for implementing a `clearCaches()` method in an `Observer`
