@@ -2,9 +2,9 @@
 
 namespace Sfneal\Observables\Tests\Mocks;
 
-use Sfneal\Events\AbstractEvent;
+use Sfneal\Events\Event;
 
-class TestEvent extends AbstractEvent
+class TestEvent extends Event
 {
     /**
      * @var int

@@ -2,9 +2,9 @@
 
 namespace Sfneal\Observables\Tests\Mocks;
 
-use Sfneal\Listeners\AbstractListener;
+use Sfneal\Listeners\Listener;
 
-class PeopleCreatedListener extends AbstractListener
+class PeopleCreatedListener extends Listener
 {
     /**
      * Handle the event.

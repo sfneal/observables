@@ -2,10 +2,10 @@
 
 namespace Sfneal\Observables\Tests\Mocks;
 
-use Sfneal\Events\AbstractEvent;
+use Sfneal\Events\Event;
 use Sfneal\Observables\Tests\Models\People;
 
-class PeopleCreatedEvent extends AbstractEvent
+class PeopleCreatedEvent extends Event
 {
     /**
      * @var People

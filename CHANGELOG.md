@@ -31,3 +31,9 @@ All notable changes to `observables` will be documented in this file
 - cut support for php7.2 & lower
 - bump min laravel/framework version to 8.34 to support EventFake assertion methods
 - make test suite for testing `Event`, `Listener` & `Observable` functionality
+
+
+## 1.0.0 - 2021-04-05
+- initial production release
+- bump sfneal/queueables min version to ^2.0
+- refactor classes to remove 'Abstract' prefix from `Event`, `Listener` & `Observer`

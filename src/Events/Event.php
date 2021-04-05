@@ -9,7 +9,7 @@ use Illuminate\Queue\SerializesModels;
 /**
  * Class AbstractEvent.
  */
-abstract class AbstractEvent
+abstract class Event
 {
     use Dispatchable, InteractsWithSockets, SerializesModels;
 }
