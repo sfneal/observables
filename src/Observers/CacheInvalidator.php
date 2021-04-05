@@ -1,8 +1,6 @@
 <?php
 
-
 namespace Sfneal\Observers;
-
 
 use Illuminate\Database\Eloquent\Model;
 
