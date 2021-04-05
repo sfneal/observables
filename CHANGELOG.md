@@ -41,3 +41,7 @@ All notable changes to `observables` will be documented in this file
 
 ## 1.1.0 - 2021-04-05
 - make `CacheInvalidator` trait for implementing a `clearCaches()` method in an `Observer`
+
+
+## 1.2.0 - 2021-04-05
+- refactor `CacheInvalidator` from a trait to an interface

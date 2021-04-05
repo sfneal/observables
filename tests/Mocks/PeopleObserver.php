@@ -2,7 +2,6 @@
 
 namespace Sfneal\Observables\Tests\Mocks;
 
-use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\Cache;
 use Illuminate\Support\Facades\Event;
 use Sfneal\Observables\Tests\Models\People;
@@ -10,10 +9,8 @@ use Sfneal\Observers\CacheInvalidator;
 use Sfneal\Observers\Created;
 use Sfneal\Observers\Observer;
 
-class PeopleObserver extends Observer implements Created
+class PeopleObserver extends Observer implements Created, CacheInvalidator
 {
-    use CacheInvalidator;
-
     /**
      * Handle a Model's "created" event.
      *
@@ -29,9 +26,10 @@ class PeopleObserver extends Observer implements Created
     /**
      * Clear a Model's related caches.
      *
-     * @param Model $model
+     * @param People $people
+     * @return void
      */
-    protected function clearCaches(Model $model): void
+    public function clearCaches(People $people): void
     {
         Cache::flush();
     }
