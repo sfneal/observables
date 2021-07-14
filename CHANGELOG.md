@@ -45,3 +45,7 @@ All notable changes to `observables` will be documented in this file
 
 ## 1.2.0 - 2021-04-05
 - refactor `CacheInvalidator` from a trait to an interface
+
+
+## 1.2.1 - 2021-07-14
+- bump sfneal/mock-models min version to v0.7
