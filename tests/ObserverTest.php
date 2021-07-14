@@ -5,18 +5,27 @@ namespace Sfneal\Observables\Tests;
 use Illuminate\Support\Facades\Event;
 use Sfneal\Observables\Tests\Mocks\TestEvent;
 use Sfneal\Observables\Tests\Models\People;
+use Sfneal\Testing\Utils\Traits\EventFaker;
 
 class ObserverTest extends TestCase
 {
+    use EventFaker;
+
+    /**
+     * Setup the test environment.
+     *
+     * @return void
+     */
+    protected function setUp(): void
+    {
+        parent::setUp();
+
+        $this->eventFaker([TestEvent::class]);
+    }
+
     /** @test */
     public function observer_is_attached()
     {
-        // Enable event faking
-        Event::fake([TestEvent::class]);
-
-        // Assert that no events were dispatched...
-        Event::assertNothingDispatched();
-
         // Assert that no events have been pushed
         Event::assertNotDispatched(TestEvent::class);
 

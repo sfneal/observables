@@ -40,8 +40,12 @@ All notable changes to `observables` will be documented in this file
 
 
 ## 1.1.0 - 2021-04-05
-- make `CacheInvalidator` trait for implementing a `clearCaches()` method in an `Observer`
+- make `CacheInvalidator` trait for implementing a `clearCaches()` method in an `Observer` extension
 
 
 ## 1.2.0 - 2021-04-05
 - refactor `CacheInvalidator` from a trait to an interface
+
+
+## 1.2.1 - 2021-07-14
+- bump sfneal/mock-models min version to v0.7

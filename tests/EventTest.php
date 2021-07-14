@@ -6,10 +6,23 @@ use Illuminate\Support\Facades\Event;
 use Sfneal\Observables\Tests\Mocks\PeopleCreatedEvent;
 use Sfneal\Observables\Tests\Mocks\TestEvent;
 use Sfneal\Observables\Tests\Models\People;
+use Sfneal\Testing\Utils\Traits\EventFaker;
 
 class EventTest extends TestCase
 {
-    use EventFakerSetup;
+    use EventFaker;
+
+    /**
+     * Setup the test environment.
+     *
+     * @return void
+     */
+    protected function setUp(): void
+    {
+        parent::setUp();
+
+        $this->eventFaker();
+    }
 
     /** @test */
     public function event_can_be_fired_from_model()
