@@ -1,9 +1,9 @@
 <?php
 
-namespace Sfneal\Observables\Tests\Factories;
+namespace Sfneal\Observables\Tests\Assets\Factories;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
-use Sfneal\Observables\Tests\Models\People;
+use Sfneal\Observables\Tests\Assets\Models\People;
 
 class PeopleFactory extends Factory
 {

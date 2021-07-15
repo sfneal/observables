@@ -3,9 +3,9 @@
 namespace Sfneal\Observables\Tests;
 
 use Illuminate\Support\Facades\Event;
-use Sfneal\Observables\Tests\Mocks\PeopleCreatedEvent;
-use Sfneal\Observables\Tests\Mocks\TestEvent;
-use Sfneal\Observables\Tests\Models\People;
+use Sfneal\Observables\Tests\Assets\Mocks\PeopleCreatedEvent;
+use Sfneal\Observables\Tests\Assets\Mocks\TestEvent;
+use Sfneal\Observables\Tests\Assets\Models\People;
 use Sfneal\Testing\Utils\Traits\EventFaker;
 
 class EventTest extends TestCase

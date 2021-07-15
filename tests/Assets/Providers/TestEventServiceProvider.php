@@ -1,14 +1,14 @@
 <?php
 
-namespace Sfneal\Observables\Tests\Providers;
+namespace Sfneal\Observables\Tests\Assets\Providers;
 
 use Illuminate\Foundation\Support\Providers\EventServiceProvider as ServiceProvider;
-use Sfneal\Observables\Tests\Mocks\PeopleCreatedEvent;
-use Sfneal\Observables\Tests\Mocks\PeopleCreatedListener;
-use Sfneal\Observables\Tests\Mocks\PeopleObserver;
-use Sfneal\Observables\Tests\Mocks\TestEvent;
-use Sfneal\Observables\Tests\Mocks\TestListener;
-use Sfneal\Observables\Tests\Models\People;
+use Sfneal\Observables\Tests\Assets\Mocks\PeopleCreatedEvent;
+use Sfneal\Observables\Tests\Assets\Mocks\PeopleCreatedListener;
+use Sfneal\Observables\Tests\Assets\Mocks\PeopleObserver;
+use Sfneal\Observables\Tests\Assets\Mocks\TestEvent;
+use Sfneal\Observables\Tests\Assets\Mocks\TestListener;
+use Sfneal\Observables\Tests\Assets\Models\People;
 
 class TestEventServiceProvider extends ServiceProvider
 {

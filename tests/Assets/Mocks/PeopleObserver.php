@@ -1,10 +1,10 @@
 <?php
 
-namespace Sfneal\Observables\Tests\Mocks;
+namespace Sfneal\Observables\Tests\Assets\Mocks;
 
 use Illuminate\Support\Facades\Cache;
 use Illuminate\Support\Facades\Event;
-use Sfneal\Observables\Tests\Models\People;
+use Sfneal\Observables\Tests\Assets\Models\People;
 use Sfneal\Observers\CacheInvalidator;
 use Sfneal\Observers\Created;
 use Sfneal\Observers\Observer;

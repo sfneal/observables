@@ -1,11 +1,11 @@
 <?php
 
-namespace Sfneal\Observables\Tests\Models;
+namespace Sfneal\Observables\Tests\Assets\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
-use Sfneal\Observables\Tests\Factories\PeopleFactory;
-use Sfneal\Observables\Tests\Mocks\PeopleCreatedEvent;
+use Sfneal\Observables\Tests\Assets\Factories\PeopleFactory;
+use Sfneal\Observables\Tests\Assets\Mocks\PeopleCreatedEvent;
 
 class People extends Model
 {

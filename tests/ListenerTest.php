@@ -3,10 +3,10 @@
 namespace Sfneal\Observables\Tests;
 
 use Illuminate\Support\Facades\Event;
-use Sfneal\Observables\Tests\Mocks\PeopleCreatedEvent;
-use Sfneal\Observables\Tests\Mocks\PeopleCreatedListener;
-use Sfneal\Observables\Tests\Mocks\TestEvent;
-use Sfneal\Observables\Tests\Mocks\TestListener;
+use Sfneal\Observables\Tests\Assets\Mocks\PeopleCreatedEvent;
+use Sfneal\Observables\Tests\Assets\Mocks\PeopleCreatedListener;
+use Sfneal\Observables\Tests\Assets\Mocks\TestEvent;
+use Sfneal\Observables\Tests\Assets\Mocks\TestListener;
 use Sfneal\Testing\Utils\Traits\EventFaker;
 
 class ListenerTest extends TestCase

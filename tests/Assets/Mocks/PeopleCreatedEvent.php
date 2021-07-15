@@ -1,9 +1,9 @@
 <?php
 
-namespace Sfneal\Observables\Tests\Mocks;
+namespace Sfneal\Observables\Tests\Assets\Mocks;
 
 use Sfneal\Events\Event;
-use Sfneal\Observables\Tests\Models\People;
+use Sfneal\Observables\Tests\Assets\Models\People;
 
 class PeopleCreatedEvent extends Event
 {
