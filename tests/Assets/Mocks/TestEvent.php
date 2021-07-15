@@ -1,6 +1,6 @@
 <?php
 
-namespace Sfneal\Observables\Tests\Mocks;
+namespace Sfneal\Observables\Tests\Assets\Mocks;
 
 use Sfneal\Events\Event;
 

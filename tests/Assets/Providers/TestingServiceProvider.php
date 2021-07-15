@@ -1,11 +1,16 @@
 <?php
 
-namespace Sfneal\Observables\Tests\Providers;
+namespace Sfneal\Observables\Tests\Assets\Providers;
 
 use Illuminate\Support\ServiceProvider;
 
 class TestingServiceProvider extends ServiceProvider
 {
+    /**
+     * Bootstrap any services.
+     *
+     * @return void
+     */
     public function boot()
     {
         // Publish migration file (if not already published)
@@ -18,6 +23,11 @@ class TestingServiceProvider extends ServiceProvider
         }
     }
 
+    /**
+     * Register any services.
+     *
+     * @return void
+     */
     public function register()
     {
         $this->app->register(TestEventServiceProvider::class);
