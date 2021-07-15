@@ -2,6 +2,7 @@
 
 namespace Sfneal\Observables\Tests;
 
+use Illuminate\Foundation\Application;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Orchestra\Testbench\TestCase as OrchestraTestCase;
 use Sfneal\Observables\Tests\Providers\TestingServiceProvider;
@@ -10,6 +11,12 @@ class TestCase extends OrchestraTestCase
 {
     use RefreshDatabase;
 
+    /**
+     * Register package service providers.
+     *
+     * @param Application $app
+     * @return array
+     */
     protected function getPackageProviders($app)
     {
         return [
@@ -17,6 +24,12 @@ class TestCase extends OrchestraTestCase
         ];
     }
 
+    /**
+     * Define environment setup.
+     *
+     * @param Application $app
+     * @return void
+     */
     protected function getEnvironmentSetUp($app)
     {
         // Migrate 'people' table
