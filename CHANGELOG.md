@@ -49,3 +49,7 @@ All notable changes to `observables` will be documented in this file
 
 ## 1.2.1 - 2021-07-14
 - bump sfneal/mock-models min version to v0.7
+
+
+## 1.2.2 - 2021-07-15
+- refactor testing mock assets to 'test/Assets' directory
